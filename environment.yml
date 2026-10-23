@@ -1,0 +1,19 @@
+# The environment the published runs were made in.
+#
+#     conda env create -f environment.yml
+#     conda activate nsidc-sic-error
+#
+# The experiment itself needs only numpy, pandas, scipy and matplotlib.
+# netCDF4 is used by export_matchups.py and by the author's netCDF input path,
+# neither of which is needed to reproduce the published numbers from the
+# shipped matchup table.
+name: nsidc-sic-error
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.8
+  - numpy=1.26.4
+  - pandas=2.2.1
+  - scipy=1.11.4
+  - matplotlib=3.8.0
+  - netcdf4=1.6.4

@@ -1,0 +1,7 @@
+# A rerun writes here; results/ and figures/ hold the published copies.
+output/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
